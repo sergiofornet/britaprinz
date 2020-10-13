@@ -1,0 +1,16 @@
+# Ignore composer generated files and directories
+composer.lock
+vendor
+
+# Ignore wp-config.php and .htaccess
+wp-config.php
+.htaccess
+
+# Ignore the wp-content directory
+wp-content/plugins/*
+wp-content/themes/*
+wp-content/uploads
+wp-content/languages
+
+# Don't ignore mu-plugins
+!wp-content/mu-plugins

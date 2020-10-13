@@ -1,12 +1,40 @@
 {
+	"config": {
+		"platform": {
+			"php": "7.3"
+		}
+	},
 	"repositories": [
 		{
 			"type": "composer",
 			"url": "https://wpackagist.org"
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "afragen/github-updater",
+				"type": "wordpress-plugin",
+				"version": "0",
+				"require": {
+					"composer/installers": "^1"
+				}
+			}
 		}
 	],
 	"require": {
 		"wpackagist-theme/twentytwenty": "*",
-		"htmlburger/carbon-fields": "^3.1"
+		"htmlburger/carbon-fields": "^3.1",
+		"afragen/github-updater": "^9"
+	},
+	"minimum-stability": "dev",
+	"extra": {
+		"installer-paths": {
+			"wp-content/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"wp-content/themes/{$name}/": [
+				"type:wordpress-theme"
+			]
+		}
 	}
 }

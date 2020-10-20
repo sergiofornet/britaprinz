@@ -24,3 +24,6 @@ wp-content/languages
 
 # Don't ignore britaprinz-core plugin
 !wp-content/plugins/britaprinz-core
+
+# Don't ignore britaprinz-core plugin
+!wp-content/plugins/britaprinz-custom-fields

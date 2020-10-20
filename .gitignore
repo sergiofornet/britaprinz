@@ -7,7 +7,7 @@ Thumbs.db
 
 # Ignore composer generated files and directories
 composer.lock
-vendor
+/vendor
 
 # Ignore wp-config.php and .htaccess
 wp-config.php

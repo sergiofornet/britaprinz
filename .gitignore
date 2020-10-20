@@ -21,3 +21,6 @@ wp-content/languages
 
 # Don't ignore mu-plugins
 !wp-content/mu-plugins
+
+# Don't ignore britaprinz-core plugin
+!wp-content/plugins/britaprinz-core

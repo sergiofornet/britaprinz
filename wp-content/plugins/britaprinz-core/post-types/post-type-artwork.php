@@ -3,7 +3,7 @@
 $post_type = 'artwork';
 
 $labels = array(
-	'name'					=> _x( 'Obras', 'Post Type General Name', 'britaprinz-core' ),
+	'name'					=> _x( 'Colección', 'Post Type General Name', 'britaprinz-core' ),
 	'singular_name'			=> _x( 'Obra', 'Post Type Singular Name', 'britaprinz-core' ),
 	'add_new'				=> __( 'Añadir obra', 'britaprinz-core' ),
 	'add_new_item'			=> __( 'Añadir obra', 'britaprinz-core' ),

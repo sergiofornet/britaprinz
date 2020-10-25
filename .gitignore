@@ -5,6 +5,11 @@ Icon?
 Thumbs.db
 ._*
 
+# Logs and databases
+*.log
+*.sql
+*.env
+
 # Ignore composer generated files and directories
 composer.lock
 /vendor
@@ -17,6 +22,7 @@ wp-config.php
 wp-content/plugins/*
 wp-content/themes/*
 wp-content/uploads
+wp-content/upgrade
 wp-content/languages
 
 # Don't ignore mu-plugins

@@ -14,7 +14,7 @@
 
 require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-artwork.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-award.php' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-exhibition.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-event.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-project.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-technique.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/taxonomy-artist.php' );
@@ -25,6 +25,6 @@ require_once( plugin_dir_path( __FILE__ ) . 'includes/taxonomy-artist.php' );
 new Artwork();
 new Artist();
 new Award();
-new Exhibition();
+new Event();
 new Project();
 new Technique();

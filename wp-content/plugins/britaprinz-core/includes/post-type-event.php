@@ -1,9 +1,9 @@
 <?php
-class Exhibition {
+class Event {
     /**
      * Register post type
      */
-	private $type = 'exhibition';
+	private $type = 'event';
 
     public function register() {
         $labels = array(
@@ -40,7 +40,6 @@ class Exhibition {
 			'label'                 => __( 'Exposición', 'britaprinz-core' ),
 			'labels'                => $labels,
 			'supports'              => array( 'title', 'thumbnail', 'genesis-cpt-archives-settings' ),
-			'taxonomies'			=> array( 'artist' ),
 			'description'			=> __( 'Exposiciones', 'britaprinz-core' ),
 			'public'                => true,
 			'exclude_from_search'   => true,
@@ -53,10 +52,10 @@ class Exhibition {
 			'menu_icon'             => 'dashicons-calendar-alt',
 			'capability_type'       => 'page',
 			'hierarchical'          => false,
-			'has_archive'           => true,
+			// 'has_archive'           => true,
 			'can_export'            => true,
 			'rewrite'            	=> array(
-				'slug' => _x( 'exposiciones', 'britaprinz-core'),
+				'slug' => _x( 'exposicion', 'britaprinz-core'),
 				'with_front' => false ),
 			'show_in_rest'          => true,
 		);
@@ -67,7 +66,7 @@ class Exhibition {
     }
  
     /**
-     * Exhibition constructor.
+     * event constructor.
      *
      * When class is instantiated
      */

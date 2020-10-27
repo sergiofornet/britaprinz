@@ -40,7 +40,7 @@ class Technique {
 		$args = array(
 			'label'                 => __( 'Técnicas de grabado', 'britaprinz-core' ),
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'thumbnail' ),
+			'supports'              => array( 'title', 'thumbnail', 'editor' ),
 			'description'			=> __( 'Técnicas', 'britaprinz-core' ),
 			'public'                => true,
 			'exclude_from_search'   => false,
@@ -53,7 +53,7 @@ class Technique {
 			'menu_icon'             => 'dashicons-art',
 			'capability_type'       => 'page',
 			'hierarchical'          => true,
-			'has_archive'           => true,
+			'has_archive'           => false,
 			'can_export'            => true,
 			'rewrite'            	=> array(
 				'slug' => _x( 'tecnicas', 'britaprinz-core'),

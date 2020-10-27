@@ -39,5 +39,6 @@ function bp_award_fields() {
 				->set_attribute( 'placeholder', 'aaaa' ),
 			Field::make( 'file', 'bp_award_catalogue', __( 'Catálogo', 'britaprinz-custom-fields' ) )
 				->set_help_text( __( 'PDF', 'britaprinz-custom-fields' ) )
+				->set_value_type( 'url' )
 		));
 }

@@ -27,12 +27,24 @@ function bp_home_fields() {
 							),
 							array(
 								'type' => 'post',
-								'post_type' => 'exhibition',
+								'post_type' => 'event',
 							),
 							array(
-								'type' => 'term',
-								'taxonomy' => 'artist',
+								'type' => 'post',
+								'post_type' => 'artwork',
 							),
+							array(
+								'type' => 'post',
+								'post_type' => 'award',
+							),
+							array(
+								'type' => 'post',
+								'post_type' => 'project',
+							),
+							// array(
+							// 	'type' => 'term',
+							// 	'taxonomy' => 'artist',
+							// ),
 						) )
 						->set_duplicates_allowed( false )
 						->set_max( 1 ),

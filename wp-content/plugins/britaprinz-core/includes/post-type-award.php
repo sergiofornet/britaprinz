@@ -40,7 +40,6 @@ class Award {
 			'label'                 => __( 'Premio Carmen Arozena', 'britaprinz-core' ),
 			'labels'                => $labels,
 			'supports'              => array( 'title', 'thumbnail', 'genesis-cpt-archives-settings' ),
-			'taxonomies'			=> array( 'artist' ),
 			'description'			=> __( 'Exposiciones', 'britaprinz-core' ),
 			'public'                => true,
 			'exclude_from_search'   => true,

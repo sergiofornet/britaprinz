@@ -3,12 +3,12 @@ use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
 function bp_artwork_fields() {
-	Container::make( 'theme_options', __( 'Opciones de la Colección', 'britaprinz-custom-fields' ) )
-		->set_page_parent( 'edit.php?post_type=artwork' )
-		->add_fields( array(
-			Field::make( 'rich_text', 'bp_artwork_history', __( 'Historia de la Colección', 'britaprinz-custom-fields' ) ),
-			Field::make( 'image', 'crb_image', __( 'Image' ) )
-		) );
+	// Container::make( 'theme_options', __( 'Opciones de la Colección', 'britaprinz-custom-fields' ) )
+	// 	->set_page_parent( 'edit.php?post_type=artwork' )
+	// 	->add_fields( array(
+	// 		Field::make( 'rich_text', 'bp_artwork_history' . britaprinz_get_i18n_suffix(), __( 'Historia de la Colección', 'britaprinz-custom-fields' ) ),
+	// 		Field::make( 'image', 'crb_image', __( 'Image' ) )
+	// 	) );
 	Container::make( 'post_meta', __( 'Información de la obra', 'britaprinz-custom-fields' ) )
 		->where( 'post_type', '=', 'artwork' )
 		->add_fields( array(

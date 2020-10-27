@@ -39,7 +39,7 @@ class Project {
 		$args = array(
 			'label'                 => __( 'Proyecto', 'britaprinz-core' ),
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'editor', 'thumbnail', 'genesis-cpt-archives-settings' ),
+			'supports'              => array( 'title', 'editor', 'thumbnail' ),
 			'description'			=> __( 'Proyectos', 'britaprinz-core' ),
 			'public'                => true,
 			'exclude_from_search'   => false,

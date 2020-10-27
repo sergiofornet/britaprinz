@@ -39,7 +39,7 @@ class Artwork {
 		$args = array(
 			'label'                 => __( 'Obra', 'britaprinz-core' ),
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'thumbnail', 'genesis-cpt-archives-settings' ),
+			'supports'              => array( 'title', 'thumbnail' ),
 			'taxonomies'			=> array( 'artist' ),
 			'description'			=> __( 'Obras de la colección', 'britaprinz-core' ),
 			'public'                => true,

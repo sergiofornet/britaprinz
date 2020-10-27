@@ -31,8 +31,8 @@ add_action( 'carbon_fields_register_fields', 'bp_artwork_fields' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/britaprinz-artwork-fields.php' );
 
 // Expo CPT custom fields
-add_action( 'carbon_fields_register_fields', 'bp_exhibition_fields' );
-require_once( plugin_dir_path( __FILE__ ) . 'includes/britaprinz-exhibition-fields.php' );
+add_action( 'carbon_fields_register_fields', 'bp_event_fields' );
+require_once( plugin_dir_path( __FILE__ ) . 'includes/britaprinz-event-fields.php' );
 
 // Award CPT custom fields
 add_action( 'carbon_fields_register_fields', 'bp_award_fields' );

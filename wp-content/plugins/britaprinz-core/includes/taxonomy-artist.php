@@ -41,12 +41,6 @@ class Artist {
 				'slug' => _x( 'coleccion/artistas', 'britaprinz-core'),
 				'with_front' => false ),
 		);
-		
-		$artist = array(
-			'taxonomy' => $taxonomy,
-			'args' => $args,
-			'post_type' => $post_type
-		);
  
 		register_taxonomy($this->taxonomy, 'artwork', $args);
 		

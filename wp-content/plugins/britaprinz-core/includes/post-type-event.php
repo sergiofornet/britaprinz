@@ -42,7 +42,7 @@ class Event {
 			'supports'              => array( 'title', 'thumbnail' ),
 			'description'			=> __( 'Exposiciones', 'britaprinz-core' ),
 			'public'                => true,
-			'exclude_from_search'   => true,
+			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
 			'show_ui'               => true,
 			'show_in_nav_menus'     => true,

@@ -43,7 +43,7 @@ class Artwork {
 			'taxonomies'			=> array( 'artist' ),
 			'description'			=> __( 'Obras de la colección', 'britaprinz-core' ),
 			'public'                => true,
-			'exclude_from_search'   => true,
+			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
 			'show_ui'               => true,
 			'show_in_nav_menus'     => true,

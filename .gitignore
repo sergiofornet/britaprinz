@@ -9,6 +9,7 @@ Thumbs.db
 *.log
 *.sql
 *.env
+*error_log
 
 # Ignore composer generated files and directories
 composer.lock

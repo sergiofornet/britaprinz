@@ -14,24 +14,33 @@ function bp_artwork_fields() {
 		->add_fields( array(
 			Field::make( 'text', 'bp_artwork_year', __( 'Año', 'britaprinz-custom-fields' ) )
 				->set_width( 50 )
-				->set_attribute( 'placeholder', 'aaaa' ),
+				->set_attribute( 'placeholder', 'aaaa' )
+				->set_visible_in_rest_api( $visible = true ),
 			Field::make( 'text', 'bp_artwork_copy', __( 'Ejemplar', 'britaprinz-custom-fields' ) )
-				->set_width( 50 ),
+				->set_width( 50 )
+				->set_visible_in_rest_api( $visible = true ),
 			Field::make( 'text', 'bp_artwork_paper', __( 'Papel', 'britaprinz-custom-fields' ) )
-				->set_width( 33 ),
+				->set_width( 33 )
+				->set_visible_in_rest_api( $visible = true ),
 			Field::make( 'text', 'bp_artwork_size', __( 'Tamaño', 'britaprinz-custom-fields' ) )
-				->set_width( 33 ),
+				->set_width( 33 )
+				->set_visible_in_rest_api( $visible = true ),
 			Field::make( 'text', 'bp_artwork_condition', __( 'Estado', 'britaprinz-custom-fields' ) )
-				->set_width( 33 ),
+				->set_width( 33 )
+				->set_visible_in_rest_api( $visible = true ),
 			Field::make( 'checkbox', 'bp_artwork_loan', __( 'Disponible para préstamo', 'britaprinz-custom-fields' ) )
 				->set_option_value( 'true' )
-				->set_width( 50 ),
+				->set_width( 50 )
+				->set_visible_in_rest_api( $visible = true ),
 			Field::make( 'checkbox', 'bp_artwork_sale', __( 'Disponible para venta', 'britaprinz-custom-fields' ) )
 				->set_option_value( 'true' )
-				->set_width( 50 ),
-			Field::make( 'rich_text', 'bp_artwork_info', __( 'Descripción', 'britaprinz-custom-fields' ) ),
+				->set_width( 50 )
+				->set_visible_in_rest_api( $visible = true ),
+			Field::make( 'rich_text', 'bp_artwork_info', __( 'Descripción', 'britaprinz-custom-fields' ) )
+				->set_visible_in_rest_api( $visible = true ),
 			Field::make( 'complex', 'bp_artwork_technique', __( 'Técnica', 'britaprinz-custom-fields' ) )
 				->set_duplicate_groups_allowed( false )
+				->set_visible_in_rest_api( $visible = true )
 				->add_fields( array(
 					Field::make( 'association', 'bp_artwork_technique_list', __( 'Técnicas de grabado', 'britaprinz-custom-fields' ) )
 						->set_types( array(
@@ -45,7 +54,8 @@ function bp_artwork_fields() {
 				) ),
 			Field::make( 'media_gallery', 'bp_artwork_gallery', __( 'Galería', 'britaprinz-custom-fields' ) )
 				->set_type( array( 'image' ) )
-				->set_duplicates_allowed( false ),
+				->set_duplicates_allowed( false )
+				->set_visible_in_rest_api( $visible = true ),
 		));
 
 	add_filter( 'crb_media_buttons_html', function( $html, $field_name ) {

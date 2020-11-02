@@ -59,6 +59,8 @@ class Artwork {
 				'slug' => _x( 'coleccion/obras', 'britaprinz-core'),
 				'with_front' => false ),
 			'show_in_rest'          => true,
+			'rest_base'             => 'artwork',
+			'rest_controller_class' => 'WP_REST_Posts_Controller',
 		);
  
 		register_post_type( $this->type, $args );

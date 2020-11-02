@@ -40,6 +40,8 @@ class Artist {
 			'rewrite' 			=> array(
 				'slug' => _x( 'coleccion/artistas', 'britaprinz-core'),
 				'with_front' => false ),
+			'rest_base'             => 'artist',
+			'rest_controller_class' => 'WP_REST_Terms_Controller',
 		);
  
 		register_taxonomy($this->taxonomy, 'artwork', $args);

@@ -18,6 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
+add_filter( 'carbon_fields_theme_options_container_admin_only_access', '__return_false' );
+
 // General options custom fields
 add_action( 'carbon_fields_register_fields', 'bp_general_options' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/britaprinz-general-options.php' );

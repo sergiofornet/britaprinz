@@ -9,8 +9,6 @@ function check_i18n_function() {
 	return 'bp_theme_textarea';
 }
 
-add_filter( 'carbon_fields_theme_options_container_admin_only_access', '__return_false' );
-
 function bp_general_options() {
 	Container::make( 'theme_options', __( 'Opciones generales', 'britaprinz-custom-fields' ) )
 		->where( 'current_user_capability', 'IN', array( 'administrator', 'editor' ) )

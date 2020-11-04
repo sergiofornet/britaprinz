@@ -8,7 +8,8 @@ function bp_artist_fields() {
 		->where( 'term_taxonomy', '=', 'artist' )
 		->add_fields( array(
 			// Field::make( 'rich_text', 'bp_artist_bio', __( 'Biografía', 'britaprinz-custom-fields' ) ),
-			Field::make( 'text', 'bp_artist_order_name', __( 'Nombre para ordenar', 'britaprinz-custom-fields' ) ),
+			Field::make( 'text', 'bp_artist_order_name', __( 'Nombre para ordenar', 'britaprinz-custom-fields' ) )
+				->set_visible_in_rest_api( $visible = true ),
 		));
 
 	// add_filter( 'crb_media_buttons_html', function( $html, $field_name ) {

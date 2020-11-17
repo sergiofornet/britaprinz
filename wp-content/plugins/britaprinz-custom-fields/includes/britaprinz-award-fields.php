@@ -18,12 +18,12 @@ function bp_award_fields() {
 					Field::make( 'text', 'bp_award_category', __( 'Categoría' ) ),
 					Field::make( 'text', 'bp_award_title', __( 'Título' ) ),
 					Field::make( 'text', 'bp_award_artist', __( 'Artista' ) ),
-					Field::make( 'text', 'bp_award_size', __( 'Medidas' ) ),
+					Field::make( 'text', 'bp_award_size', __( 'Tamaño' ) ),
 					Field::make( 'text', 'bp_award_technique', __( 'Técnica' ) ),
 					Field::make( 'image', 'bp_award_image', __( 'Imagen' ) )
 						->set_type( array( 'image' ) ),
 				) ),
-			Field::make( 'textarea', 'bp_award_mentions', __( 'Menciones especiales' ) ),
+			Field::make( 'textarea', 'bp_award_mentions', __( 'Menciones de honor' ) ),
 			Field::make( 'textarea', 'bp_award_selected', __( 'Seleccionados' ) )
 		) );
 	Container::make( 'post_meta', __( 'Edición', 'britaprinz-custom-fields' ) )

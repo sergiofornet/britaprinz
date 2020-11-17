@@ -12,6 +12,7 @@ function check_i18n_function() {
 function bp_general_options() {
 	Container::make( 'theme_options', __( 'Opciones generales', 'britaprinz-custom-fields' ) )
 		->where( 'current_user_capability', 'IN', array( 'administrator', 'editor' ) )
+		->set_page_menu_position( 30 )
 		->add_tab( __( 'Opciones generales' ), array(
 			Field::make( 'image', 'bp_theme_logo', __( 'Logo', 'britaprinz-custom-fields' ) )
 						->set_type( array( 'image' ) ),

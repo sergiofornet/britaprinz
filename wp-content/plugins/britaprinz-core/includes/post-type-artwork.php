@@ -62,6 +62,12 @@ class Artwork {
 			'rest_base'             => 'artwork',
 			'rest_controller_class' => 'WP_REST_Posts_Controller',
 		);
+
+		add_rewrite_tag( '%display_artist%', '([^&]+)' );
+		add_rewrite_rule(
+			'^' . __( 'coleccion/obras', 'britaprinz-core') . '/([^/]*)/?$',
+			'index.php?post_type=artwork&display_artist=$matches[1]',
+			'top');
  
 		register_post_type( $this->type, $args );
 		

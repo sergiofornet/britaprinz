@@ -56,7 +56,7 @@ class Artwork {
 			'has_archive'           => true,
 			'can_export'            => true,
 			'rewrite'            	=> array(
-				'slug' => _x( 'coleccion/obras', 'britaprinz-core'),
+				'slug' => _x( 'coleccion/artistas-obras', 'britaprinz-core'),
 				'with_front' => false ),
 			'show_in_rest'          => true,
 			'rest_base'             => 'artwork',
@@ -65,7 +65,7 @@ class Artwork {
 
 		add_rewrite_tag( '%display_artist%', '([^&]+)' );
 		add_rewrite_rule(
-			'^' . __( 'coleccion/obras', 'britaprinz-core') . '/([^/]*)/?$',
+			'^' . __( 'coleccion/artistas-obras', 'britaprinz-core') . '/([^/]*)/?$',
 			'index.php?post_type=artwork&display_artist=$matches[1]',
 			'top');
  

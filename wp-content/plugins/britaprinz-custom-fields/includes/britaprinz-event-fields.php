@@ -8,7 +8,7 @@ function bp_event_fields() {
 		->where( 'post_type', '=', 'event' )
 		->add_fields( array(
 			Field::make( 'text', 'bp_event_artist', __( 'Artista', 'britaprinz-custom-fields' ) ),
-			Field::make( 'textarea', 'bp_event_info', __( 'Información', 'britaprinz-custom-fields' ) ),
+			Field::make( 'rich_text', 'bp_event_info', __( 'Información', 'britaprinz-custom-fields' ) ),
 			Field::make( 'media_gallery', 'bp_event_gallery', __( 'Galería', 'britaprinz-custom-fields' ) )
 				->set_type( array( 'image' ) )
 				->set_duplicates_allowed( false ),
@@ -33,4 +33,11 @@ function bp_event_fields() {
 				) )
 				->set_attribute( 'placeholder', 'dd-mm-aaaa' ),
 		));
+	
+	add_filter( 'crb_media_buttons_html', function( $html, $field_name ) {
+		if ( $field_name === 'bp_event_info' ) {
+			return;
+		}
+		return $html;
+	}, 10, 2);
 }

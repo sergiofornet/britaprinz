@@ -12,7 +12,7 @@ Thumbs.db
 *error_log
 
 # Ignore composer generated files and directories
-composer.lock
+# composer.lock
 /vendor
 
 # Ignore wp-config.php and .htaccess

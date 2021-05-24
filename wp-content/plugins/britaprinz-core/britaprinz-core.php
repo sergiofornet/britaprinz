@@ -17,6 +17,7 @@ require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-award.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-event.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-project.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-technique.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'includes/post-type-post.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'includes/taxonomy-artist.php' );
  
 /**
@@ -28,3 +29,4 @@ new Award();
 new Event();
 new Project();
 new Technique();
+new News();

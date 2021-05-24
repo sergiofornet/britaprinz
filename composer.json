@@ -1,4 +1,6 @@
 {
+	"name": "bettysymington/britaprinzarte",
+	"description": "WordPress project for Brita Prinz Arte",
 	"config": {
 		"platform": {
 			"php": "7.3"

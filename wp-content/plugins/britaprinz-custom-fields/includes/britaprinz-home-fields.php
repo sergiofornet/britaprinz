@@ -7,13 +7,6 @@ function bp_home_fields() {
 		->where( 'post_id', '=', get_option( 'page_on_front' ) )
 		->set_context( 'advanced' )
 		->add_fields( array(
-			Field::make( 'media_gallery', 'bp_home_gallery', __( 'Galería', 'britaprinz-custom-fields' ) )
-				->set_type( array( 'image' ) )
-				->set_duplicates_allowed( false )
-				->set_width( 50 ),
-			Field::make( 'textarea', 'bp_home_gallery_text', __( 'Texto destacado', 'britaprinz-custom-fields' ) )
-			->set_width( 50 ),
-			Field::make( 'rich_text', 'bp_home_about', __( 'Sobre la colección', 'britaprinz-custom-fields' ) ),
 			Field::make( 'complex', 'bp_home_featured', __( 'Destacados', 'britaprinz-custom-fields' ) )
 				->set_max( 2 )
 				->set_layout( 'tabbed-vertical' )

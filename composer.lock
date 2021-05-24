@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e217a3240e988a587d2687ebafdba7b",
+    "content-hash": "6bcb735e18d8f6c1b63459f4a7b0e14a",
     "packages": [
         {
-            "name": "afragen/github-updater",
-            "version": "9.9.4",
+            "name": "afragen/git-updater",
+            "version": "9.9.10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/afragen/github-updater.git",
-                "reference": "36363a5821b6f7e590945f2f163ae9d5a8000d12"
+                "url": "https://github.com/afragen/git-updater.git",
+                "reference": "096302c5e1a6f0fe0a622265cd3c6c1fbfb8702a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/github-updater/zipball/36363a5821b6f7e590945f2f163ae9d5a8000d12",
-                "reference": "36363a5821b6f7e590945f2f163ae9d5a8000d12",
+                "url": "https://api.github.com/repos/afragen/git-updater/zipball/096302c5e1a6f0fe0a622265cd3c6c1fbfb8702a",
+                "reference": "096302c5e1a6f0fe0a622265cd3c6c1fbfb8702a",
                 "shasum": ""
             },
             "require": {
@@ -32,7 +32,11 @@
                     "Fragen\\GitHub_Updater\\": "src/GitHub_Updater/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "post-update-cmd": [
+                    "wp i18n make-pot . languages/github-updater.pot"
+                ]
+            },
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -52,7 +56,17 @@
                 "updater",
                 "wordpress"
             ],
-            "time": "2020-11-21T18:22:24+00:00"
+            "support": {
+                "issues": "https://github.com/afragen/github-updater/issues",
+                "source": "https://github.com/afragen/github-updater"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/afragen"
+                }
+            ],
+            "time": "2021-02-18T17:38:04+00:00"
         },
         {
             "name": "afragen/singleton",
@@ -60,17 +74,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/singleton.git",
-                "reference": "75bce9e88abaefdbbf4d12bc02f71079e465326d"
+                "reference": "be8e3c3b3a53ba30db9f77f5b3bcf2d5e58ed9c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/singleton/zipball/75bce9e88abaefdbbf4d12bc02f71079e465326d",
-                "reference": "75bce9e88abaefdbbf4d12bc02f71079e465326d",
+                "url": "https://api.github.com/repos/afragen/singleton/zipball/be8e3c3b3a53ba30db9f77f5b3bcf2d5e58ed9c0",
+                "reference": "be8e3c3b3a53ba30db9f77f5b3bcf2d5e58ed9c0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -94,7 +109,11 @@
                 "singleton",
                 "wordpress"
             ],
-            "time": "2019-01-05T16:19:38+00:00"
+            "support": {
+                "issues": "https://github.com/afragen/singleton/issues",
+                "source": "https://github.com/afragen/singleton/tree/master"
+            },
+            "time": "2020-12-24T03:45:00+00:00"
         },
         {
             "name": "afragen/wordpress-plugin-readme-parser",
@@ -102,18 +121,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/wordpress-plugin-readme-parser.git",
-                "reference": "7da7e7f0e458feac79cfcc2762eb1881d080d142"
+                "reference": "f878b2a815caace5f331b827b356b4eab9610561"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/wordpress-plugin-readme-parser/zipball/7da7e7f0e458feac79cfcc2762eb1881d080d142",
-                "reference": "7da7e7f0e458feac79cfcc2762eb1881d080d142",
+                "url": "https://api.github.com/repos/afragen/wordpress-plugin-readme-parser/zipball/f878b2a815caace5f331b827b356b4eab9610561",
+                "reference": "f878b2a815caace5f331b827b356b4eab9610561",
                 "shasum": ""
             },
             "require": {
                 "erusev/parsedown": "^1.7",
                 "php": ">=5.4"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -136,21 +156,28 @@
                 "readme",
                 "wordpress"
             ],
-            "time": "2020-11-05T20:38:03+00:00"
+            "support": {
+                "issues": "https://github.com/afragen/wordpress-plugin-readme-parser/issues",
+                "source": "https://github.com/afragen/wordpress-plugin-readme-parser/tree/master"
+            },
+            "time": "2021-01-11T22:07:25+00:00"
         },
         {
             "name": "collizo4sky/persist-admin-notices-dismissal",
-            "version": "1.4.3",
+            "version": "1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/w3guy/persist-admin-notices-dismissal.git",
-                "reference": "2d7d8bb3cba631ad227c92296a4b675d7cbc71d7"
+                "reference": "900739eb6b0ec0210465f5983a6d4e0e420289e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/w3guy/persist-admin-notices-dismissal/zipball/2d7d8bb3cba631ad227c92296a4b675d7cbc71d7",
-                "reference": "2d7d8bb3cba631ad227c92296a4b675d7cbc71d7",
+                "url": "https://api.github.com/repos/w3guy/persist-admin-notices-dismissal/zipball/900739eb6b0ec0210465f5983a6d4e0e420289e4",
+                "reference": "900739eb6b0ec0210465f5983a6d4e0e420289e4",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
             },
             "type": "library",
             "autoload": {
@@ -159,14 +186,173 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
             "authors": [
                 {
                     "name": "Collins Agbonghama",
-                    "email": "me@w3guy.com"
+                    "email": "me@w3guy.com",
+                    "role": "developer"
                 }
             ],
             "description": "Simple library to persist dismissal of admin notices across pages in WordPress dashboard.",
-            "time": "2019-03-12T05:19:51+00:00"
+            "support": {
+                "issues": "https://github.com/w3guy/persist-admin-notices-dismissal/issues",
+                "source": "https://github.com/w3guy/persist-admin-notices-dismissal"
+            },
+            "time": "2020-12-31T17:12:37+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "ae03311f45dfe194412081526be2e003960df74b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/ae03311f45dfe194412081526be2e003960df74b",
+                "reference": "ae03311f45dfe194412081526be2e003960df74b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.3"
+            },
+            "default-branch": true,
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "tastyigniter",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.11.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-04-28T06:42:17+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -212,6 +398,10 @@
                 "markdown",
                 "parser"
             ],
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.8.0-beta-7"
+            },
             "time": "2019-03-17T18:47:21+00:00"
         },
         {
@@ -367,6 +557,7 @@
                 "reference": "8eb13900629cfb716e15daed776467b5c9d97503",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -378,6 +569,10 @@
                 "GPL-2.0-only"
             ],
             "description": "Helper library that allows developers to choose which fields from Carbon Fields to include in the Yoast readability score meter",
+            "support": {
+                "issues": "https://github.com/htmlburger/carbon-fields-yoast/issues",
+                "source": "https://github.com/htmlburger/carbon-fields-yoast/tree/master"
+            },
             "time": "2019-08-05T12:49:25+00:00"
         }
     ],

@@ -12,20 +12,14 @@
 			"url": "https://wpackagist.org"
 		},
 		{
-			"type": "package",
-			"package": {
-				"name": "afragen/github-updater",
-				"type": "wordpress-plugin",
-				"version": "0",
-				"require": {
-					"composer/installers": "^1"
-				}
-			}
-		}
+            "type": "vcs",
+            "url": "https://github.com/afragen/git-updater"
+        }
 	],
 	"require": {
 		"htmlburger/carbon-fields": "^3.3",
-		"afragen/github-updater": "^9",
+		"afragen/git-updater": "^9",
+		"composer/installers": "^1",	
 		"htmlburger/carbon-fields-yoast": "dev-master"
 	},
 	"minimum-stability": "dev",

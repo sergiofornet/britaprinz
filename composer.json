@@ -22,7 +22,7 @@
 		}
 	],
 	"require": {
-		"htmlburger/carbon-fields": "^3.1",
+		"htmlburger/carbon-fields": "^3.3",
 		"afragen/github-updater": "^9",
 		"htmlburger/carbon-fields-yoast": "dev-master"
 	},

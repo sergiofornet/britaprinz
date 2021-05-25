@@ -3,6 +3,6 @@
 	"phpSniffer.standard": "./phpcs.xml.dist",
 	"phpSniffer.executablesFolder": "./vendor/bin",
 	"[php]": {
-		"editor.formatOnSave": false
+		"editor.formatOnSave": true
 	}
 }

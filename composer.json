@@ -20,7 +20,8 @@
 		"htmlburger/carbon-fields": "^3.3",
 		"afragen/git-updater": "^9",
 		"composer/installers": "^1",	
-		"htmlburger/carbon-fields-yoast": "dev-master"
+		"htmlburger/carbon-fields-yoast": "dev-master",
+		"wp-coding-standards/wpcs": "dev-develop"
 	},
 	"minimum-stability": "dev",
 	"extra": {

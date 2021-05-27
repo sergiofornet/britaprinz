@@ -50,6 +50,10 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/britaprinz-technique-fields
 add_action( 'carbon_fields_register_fields', 'bpa_artist_fields' );
 require_once plugin_dir_path( __FILE__ ) . 'includes/britaprinz-artist-fields.php';
 
+// Page custom fields.
+add_action( 'carbon_fields_register_fields', 'bpa_page_fields' );
+require_once plugin_dir_path( __FILE__ ) . 'includes/britaprinz-page-fields.php';
+
 
 add_action( 'after_setup_theme', 'bpa_custom_fields_crb_load' );
 /**

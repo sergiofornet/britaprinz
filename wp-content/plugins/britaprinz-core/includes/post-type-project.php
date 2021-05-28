@@ -55,7 +55,7 @@ class Project {
 			'has_archive'           => true,
 			'can_export'            => true,
 			'rewrite'            	=> array(
-				'slug' => _x( 'publicaciones', 'britaprinz-core'),
+				'slug' => _x( 'quienes-somos/publicaciones', 'slug', 'britaprinz-core'),
 				'with_front' => false ),
 			'show_in_rest'          => true,
 		);

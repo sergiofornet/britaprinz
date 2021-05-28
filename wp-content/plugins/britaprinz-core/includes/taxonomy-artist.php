@@ -38,7 +38,7 @@ class Artist {
 			'show_in_rest'		=> true,
 			'hierarchical' 		=> true, 
 			'rewrite' 			=> array(
-				'slug' => _x( 'coleccion/artistas', 'britaprinz-core'),
+				'slug' => _x( 'coleccion/artistas', 'URL artist tax slug', 'britaprinz-core'),
 				'with_front' => false ),
 			'rest_base'             => 'artist',
 			'rest_controller_class' => 'WP_REST_Terms_Controller',

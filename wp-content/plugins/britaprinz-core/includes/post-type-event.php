@@ -55,7 +55,7 @@ class Event {
 			// 'has_archive'           => true,
 			'can_export'            => true,
 			'rewrite'            	=> array(
-				'slug' => _x( 'exposicion', 'britaprinz-core'),
+				'slug' => _x( 'exposicion', 'URL slug: event', 'britaprinz-core'),
 				'with_front' => false ),
 			'show_in_rest'          => true,
 		);

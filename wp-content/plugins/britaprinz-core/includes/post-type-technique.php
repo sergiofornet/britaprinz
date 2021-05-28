@@ -56,7 +56,7 @@ class Technique {
 			'has_archive'           => false,
 			'can_export'            => true,
 			'rewrite'            	=> array(
-				'slug' => _x( 'tecnicas', 'britaprinz-core'),
+				'slug' => _x( 'tecnicas', 'URL slug: technique', 'britaprinz-core'),
 				'with_front' => false ),
 			'show_in_rest'          => true,
 		);

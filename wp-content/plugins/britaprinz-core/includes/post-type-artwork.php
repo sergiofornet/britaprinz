@@ -56,7 +56,7 @@ class Artwork {
 			'has_archive'           => true,
 			'can_export'            => true,
 			'rewrite'            	=> array(
-				'slug' => _x( 'coleccion/artistas-obras', 'britaprinz-core'),
+				'slug' => _x( 'coleccion/artistas-obras', 'URL slug: artwork', 'britaprinz-core'),
 				'with_front' => false ),
 			'show_in_rest'          => true,
 			'rest_base'             => 'artwork',

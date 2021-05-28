@@ -55,7 +55,7 @@ class Award {
 			'has_archive'           => true,
 			'can_export'            => true,
 			'rewrite'            	=> array(
-				'slug' => _x( 'premio-carmen-arozena/ganadores', 'britaprinz-core'),
+				'slug' => _x( 'premio-carmen-arozena/ganadores', 'URL slug: award', 'britaprinz-core'),
 				'with_front' => false ),
 			'show_in_rest'          => true,
 		);

@@ -24,7 +24,8 @@ function bpa_award_fields() {
 		->where( 'post_type', '=', 'award' )
 		->add_fields(
 			array(
-				Field::make( 'checkbox', 'bp_award_se_toggle', 'Edición especial' ),
+				Field::make( 'checkbox', 'bp_award_se_toggle', 'Edición especial' )
+					->set_visible_in_rest_api( $visible = true ),
 				Field::make( 'complex', 'bp_award_se', __( 'Edición especial', 'britaprinz-custom-fields' ) )
 					->set_conditional_logic(
 						array(
@@ -34,6 +35,7 @@ function bpa_award_fields() {
 							),
 						)
 					)
+					->set_visible_in_rest_api( true )
 					->add_fields(
 						array(
 							Field::make( 'text', 'bp_award_se_year', __( 'Edición', 'britaprinz-custom-fields' ) )
@@ -60,10 +62,13 @@ function bpa_award_fields() {
 								->set_type( array( 'image' ) ),
 						)
 					),
-				Field::make( 'textarea', 'bp_award_mentions', __( 'Menciones de honor', 'britaprinz-custom-fields' ) ),
-				Field::make( 'textarea', 'bp_award_selected', __( 'Seleccionados', 'britaprinz-custom-fields' ) ),
+				Field::make( 'textarea', 'bp_award_mentions', __( 'Menciones de honor', 'britaprinz-custom-fields' ) )
+					->set_visible_in_rest_api( $visible = true ),
+				Field::make( 'textarea', 'bp_award_selected', __( 'Seleccionados', 'britaprinz-custom-fields' ) )
+					->set_visible_in_rest_api( $visible = true ),
 			)
 		);
+	
 	Container::make( 'post_meta', __( 'Edición', 'britaprinz-custom-fields' ) )
 		->where( 'post_type', '=', 'award' )
 		->set_context( 'side' )
@@ -78,7 +83,8 @@ function bpa_award_fields() {
 							'locale' => 'es',
 						)
 					)
-					->set_attribute( 'placeholder', 'aaaa' ),
+					->set_attribute( 'placeholder', 'aaaa' )
+					->set_visible_in_rest_api( $visible = true ),
 				Field::make( 'file', 'bp_award_catalogue', __( 'Catálogo', 'britaprinz-custom-fields' ) )
 					->set_type(
 						array( 'application/pdf' )
@@ -86,6 +92,10 @@ function bpa_award_fields() {
 					->set_help_text( __( 'PDF', 'britaprinz-custom-fields' ) ),
 			)
 		);
+
+	/**
+	 * TO DO: Catalog gallery
+	 */
 
 	add_filter(
 		'crb_media_buttons_html',

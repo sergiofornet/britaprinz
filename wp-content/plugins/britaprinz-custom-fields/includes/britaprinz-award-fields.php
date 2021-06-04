@@ -58,6 +58,7 @@ function bpa_award_fields() {
 							Field::make( 'text', 'bp_award_artist', __( 'Artista', 'britaprinz-custom-fields' ) ),
 							Field::make( 'text', 'bp_award_size', __( 'Tamaño', 'britaprinz-custom-fields' ) ),
 							Field::make( 'text', 'bp_award_technique', __( 'Técnica', 'britaprinz-custom-fields' ) ),
+							Field::make( 'text', 'bp_award_year', __( 'Año', 'britaprinz-custom-fields' ) ),
 							Field::make( 'image', 'bp_award_image', __( 'Imagen', 'britaprinz-custom-fields' ) )
 								->set_type( array( 'image' ) ),
 						)

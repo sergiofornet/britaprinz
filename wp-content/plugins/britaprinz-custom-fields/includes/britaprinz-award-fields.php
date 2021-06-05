@@ -35,7 +35,6 @@ function bpa_award_fields() {
 							),
 						)
 					)
-					->set_visible_in_rest_api( true )
 					->add_fields(
 						array(
 							Field::make( 'text', 'bp_award_se_year', __( 'Edición', 'britaprinz-custom-fields' ) )

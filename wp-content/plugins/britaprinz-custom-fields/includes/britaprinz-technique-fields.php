@@ -16,16 +16,17 @@ function bpa_technique_fields() {
 		->where( 'post_type', '=', 'technique' )
 		->add_fields(
 			array(
-				Field::make( 'association', 'bp_technique_artist', __( 'Artista destacado', 'britaprinz-custom-fields' ) )
+				Field::make( 'association', 'bp_technique_artwork', __( 'Obra destacada', 'britaprinz-custom-fields' ) )
 					->set_types(
 						array(
 							array(
-								'type'     => 'term',
-								'taxonomy' => 'artist',
+								'type'      => 'post',
+								'post_type' => 'artwork',
 							),
 						)
 					)
-					->set_duplicates_allowed( false ),
+					->set_duplicates_allowed( false )
+					->set_max( 1 ),
 			)
 		);
 }

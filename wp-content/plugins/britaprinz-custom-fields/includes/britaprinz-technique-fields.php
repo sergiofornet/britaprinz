@@ -25,8 +25,7 @@ function bpa_technique_fields() {
 							),
 						)
 					)
-					->set_duplicates_allowed( false )
-					->set_max( 1 ),
+					->set_duplicates_allowed( false ),
 			)
 		);
 }

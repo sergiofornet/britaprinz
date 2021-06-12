@@ -65,6 +65,8 @@ function bpa_artwork_fields() {
 							Field::make( 'text', 'bp_artwork_technique_other', __( 'Otras técnicas', 'britaprinz-custom-fields' ) ),
 						)
 					),
+				Field::make( 'checkbox', 'bp_artwork_multiple_artists', 'Varios artistas' )
+					->set_visible_in_rest_api( true ),
 				Field::make( 'media_gallery', 'bp_artwork_gallery', __( 'Galería', 'britaprinz-custom-fields' ) )
 					->set_type( array( 'image' ) )
 					->set_duplicates_allowed( false ),

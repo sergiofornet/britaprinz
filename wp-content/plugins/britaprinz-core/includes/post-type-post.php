@@ -21,7 +21,7 @@ class News {
 		$labels->singular_name            = _x( 'Noticia', 'Post Type Singular Name', 'britaprinz-core' );
 		$labels->add_new                  = __( 'Añadir noticias', 'britaprinz-core' );
 		$labels->add_new_item             = __( 'Añadir noticias', 'britaprinz-core' );
-		$labels->edit_item                = __( 'Editar noticias', 'britaprinz-core' );
+		$labels->edit_item                = __( 'Editar noticia', 'britaprinz-core' );
 		$labels->new_item                 = __( 'Noticias', 'britaprinz-core' );
 		$labels->view_item                = __( 'Ver noticia', 'britaprinz-core' );
 		$labels->view_items               = __( 'Ver noticias', 'britaprinz-core' );

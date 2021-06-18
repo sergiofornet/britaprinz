@@ -12,6 +12,13 @@ use Carbon_Fields\Field;
  * Event custom fields definition
  */
 function bpa_event_fields() {
+	Container::make( 'theme_options', __( 'Opciones de exposiciones', 'britaprinz-custom-fields' ) )
+		->set_page_parent( 'edit.php?post_type=event' )
+		->add_fields(
+			array(
+				Field::make( 'rich_text', 'bp_event_none' . britaprinz_get_i18n_suffix(), __( 'Sin exposiciones', 'britaprinz-custom-fields' ) ),
+			)
+		);
 	Container::make( 'post_meta', __( 'Información la exposición', 'britaprinz-custom-fields' ) )
 		->where( 'post_type', '=', 'event' )
 		->add_fields(

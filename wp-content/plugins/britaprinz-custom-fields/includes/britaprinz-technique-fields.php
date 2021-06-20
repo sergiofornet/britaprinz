@@ -26,7 +26,7 @@ function bpa_technique_fields() {
 						),
 					)
 					->set_max( 5 ),
-				Field::make( 'association', 'bp_technique_artwork', __( 'Obra destacada', 'britaprinz-custom-fields' ) )
+				Field::make( 'association', 'bp_technique_artwork', __( 'Obras destacadas', 'britaprinz-custom-fields' ) )
 					->set_types(
 						array(
 							array(
@@ -36,7 +36,7 @@ function bpa_technique_fields() {
 						)
 					)
 					->set_duplicates_allowed( false ),
-				Field::make( 'text', 'bp_technique_related_text', __( 'Texto obras relacionadas', 'britaprinz-custom-fields' ) )
+				Field::make( 'text', 'bp_technique_related_text', __( 'Texto obras destacadas', 'britaprinz-custom-fields' ) )
 					->set_attribute( 'placeholder', 'contenido del enlace a las obras relacionadas' ),
 			)
 		);

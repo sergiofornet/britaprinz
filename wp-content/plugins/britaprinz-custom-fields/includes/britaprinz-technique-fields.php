@@ -16,6 +16,16 @@ function bpa_technique_fields() {
 		->where( 'post_type', '=', 'technique' )
 		->add_fields(
 			array(
+				Field::make( 'complex', 'bp_technique_steps', __( 'Explicación de la técnica', 'britaprinz-custom-fields' ) )
+					->add_fields(
+						array(
+							Field::make( 'image', 'bp_technique_steps_image', __( 'Imagen', 'britaprinz-custom-fields' ) )
+								->set_width( 25 ),
+							Field::make( 'textarea', 'bp_technique_steps_text', __( 'Texto', 'britaprinz-custom-fields' ) )
+								->set_width( 75 ),
+						),
+					)
+					->set_max( 5 ),
 				Field::make( 'association', 'bp_technique_artwork', __( 'Obra destacada', 'britaprinz-custom-fields' ) )
 					->set_types(
 						array(

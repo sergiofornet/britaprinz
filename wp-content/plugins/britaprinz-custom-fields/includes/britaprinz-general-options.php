@@ -31,6 +31,30 @@ function bpa_general_options() {
 			)
 		)
 		->add_tab(
+			__( 'Links footer', 'britaprinz-custom-fields' ),
+			array(
+				Field::make( 'complex', 'bp_theme_footer_links', __( 'Links', 'britaprinz-custom-fields' ) )
+					->add_fields(
+						array(
+							Field::make(
+								'association',
+								'bp_theme_footer_links_list',
+								__( 'Link', 'britaprinz-custom-fields' )
+							)
+								->set_types(
+									array(
+										array(
+											'type'      => 'post',
+											'post_type' => 'page',
+										),
+									)
+								)
+								->set_duplicates_allowed( false ),
+						)
+					),
+			)
+		)
+		->add_tab(
 			__( 'Social', 'britaprinz-custom-fields' ),
 			array(
 				Field::make( 'complex', 'bp_theme_social', __( 'Social', 'britaprinz-custom-fields' ) )

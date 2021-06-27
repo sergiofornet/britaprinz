@@ -49,6 +49,7 @@ function bpa_general_options() {
 										),
 									)
 								)
+								->set_max( 1 )
 								->set_duplicates_allowed( false ),
 						)
 					),

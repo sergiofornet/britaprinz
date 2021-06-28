@@ -33,7 +33,7 @@ function bpa_general_options() {
 		->add_tab(
 			__( 'Links footer', 'britaprinz-custom-fields' ),
 			array(
-				Field::make( 'complex', 'bp_theme_footer_links', __( 'Links', 'britaprinz-custom-fields' ) )
+				Field::make( 'complex', 'bp_theme_footer_links' . britaprinz_get_i18n_suffix(), __( 'Links', 'britaprinz-custom-fields' ) )
 					->add_fields(
 						array(
 							Field::make(

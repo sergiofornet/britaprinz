@@ -22,6 +22,20 @@ use Carbon_Fields\Field;
 
 add_filter( 'carbon_fields_theme_options_container_admin_only_access', '__return_false' );
 
+/**
+ * Add i18n suffix to custom fields on option pages.
+ * 
+ * @return String
+ */
+function britaprinz_get_i18n_suffix() {
+	$suffix = '';
+	if ( ! defined( 'ICL_LANGUAGE_CODE' ) ) {
+		return $suffix;
+	}
+	$suffix = '_' . ICL_LANGUAGE_CODE;
+	return $suffix;
+}
+
 // General options custom fields.
 add_action( 'carbon_fields_register_fields', 'bpa_general_options' );
 require_once plugin_dir_path( __FILE__ ) . 'includes/britaprinz-general-options.php';

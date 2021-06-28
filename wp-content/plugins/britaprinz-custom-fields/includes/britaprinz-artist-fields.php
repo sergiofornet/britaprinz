@@ -20,6 +20,7 @@ function bpa_artist_fields() {
 				Field::make( 'text', 'bp_artist_order_name', __( 'Nombre para ordenar', 'britaprinz-custom-fields' ) )
 					->set_visible_in_rest_api( $visible = true )
 					->set_attribute( 'pattern', '[a-z]+' )
+					->set_help_text( 'El nombre/apellido a tener en cuenta para ordenar a los artistas. En minúscula y sin espacios y/o caracteres especiales.' )
 					->set_attribute( 'placeholder', 'sólo minúsculas, sin espacios ni caracteres especiales' )
 					->set_required(),
 			)

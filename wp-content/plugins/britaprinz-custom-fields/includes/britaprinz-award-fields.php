@@ -93,16 +93,10 @@ function bpa_award_fields() {
 		->set_priority( 'core' )
 		->add_fields(
 			array(
-				Field::make( 'date', 'bp_award_edition', __( 'Edición', 'britaprinz-custom-fields' ) )
-					->set_storage_format( 'Y' )
-					->set_input_format( 'Y', 'Y' )
-					->set_picker_options(
-						array(
-							'locale' => 'es',
-						)
-					)
-					->set_attribute( 'placeholder', 'aaaa' )
-					->set_visible_in_rest_api( $visible = true ),
+				Field::make( 'text', 'bp_award_edition', __( 'Edición', 'britaprinz-custom-fields' ) )
+					->set_visible_in_rest_api( true )
+					->set_attribute( 'pattern', '^([0-9]{4}|[0-9]{4}-[0-9]{4})$' )
+					->set_attribute( 'placeholder', 'AAAA / AAAA-AAAA' ),
 				Field::make( 'file', 'bp_award_catalogue', __( 'Catálogo', 'britaprinz-custom-fields' ) )
 					->set_type(
 						array( 'application/pdf' )

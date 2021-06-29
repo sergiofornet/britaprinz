@@ -12,14 +12,14 @@ use Carbon_Fields\Field;
  * Award custom fields definition
  */
 function bpa_award_fields() {
-	Container::make( 'theme_options', __( 'Opciones del premio', 'britaprinz-custom-fields' ) )
-		->set_page_parent( 'edit.php?post_type=award' )
-		->where( 'current_user_capability', 'IN', array( 'administrator' ) )
-		->add_fields(
-			array(
-				Field::make( 'rich_text', 'bp_award_history', __( 'Historia del premio', 'britaprinz-custom-fields' ) ),
-			)
-		);
+	// Container::make( 'theme_options', __( 'Opciones del premio', 'britaprinz-custom-fields' ) )
+	// 	->set_page_parent( 'edit.php?post_type=award' )
+	// 	->where( 'current_user_capability', 'IN', array( 'administrator' ) )
+	// 	->add_fields(
+	// 		array(
+	// 			Field::make( 'rich_text', 'bp_award_history', __( 'Historia del premio', 'britaprinz-custom-fields' ) ),
+	// 		)
+	// 	);
 	Container::make( 'post_meta', __( 'Detalles de la edición', 'britaprinz-custom-fields' ) )
 		->where( 'post_type', '=', 'award' )
 		->set_context( 'normal' )

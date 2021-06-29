@@ -24,23 +24,17 @@ function bpa_artwork_fields() {
 			array(
 				Field::make( 'text', 'bp_artwork_year', __( 'Año', 'britaprinz-custom-fields' ) )
 					->set_width( 50 )
-					->set_attribute( 'placeholder', 'aaaa' )
-					->set_visible_in_rest_api( $visible = true ),
+					->set_attribute( 'placeholder', 'aaaa' ),
 				Field::make( 'text', 'bp_artwork_copy', __( 'Ejemplar', 'britaprinz-custom-fields' ) )
-					->set_width( 50 )
-					->set_visible_in_rest_api( $visible = true ),
+					->set_width( 50 ),
 				Field::make( 'text', 'bp_artwork_paper', __( 'Papel', 'britaprinz-custom-fields' ) )
-					->set_width( 50 )
-					->set_visible_in_rest_api( $visible = true ),
+					->set_width( 50 ),
 				Field::make( 'text', 'bp_artwork_condition', __( 'Estado', 'britaprinz-custom-fields' ) )
-					->set_width( 50 )
-					->set_visible_in_rest_api( $visible = true ),
+					->set_width( 50 ),
 				Field::make( 'text', 'bp_artwork_size', __( 'Tamaño de papel', 'britaprinz-custom-fields' ) )
-					->set_width( 50 )
-					->set_visible_in_rest_api( $visible = true ),
+					->set_width( 50 ),
 				Field::make( 'text', 'bp_artwork_size_image', __( 'Tamaño de plancha', 'britaprinz-custom-fields' ) )
-					->set_width( 50 )
-					->set_visible_in_rest_api( $visible = true ),
+					->set_width( 50 ),
 				Field::make( 'checkbox', 'bp_artwork_loan', __( 'Disponible para préstamo', 'britaprinz-custom-fields' ) )
 					->set_option_value( 'true' )
 					->set_width( 50 ),

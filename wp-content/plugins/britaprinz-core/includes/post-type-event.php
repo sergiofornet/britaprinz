@@ -39,7 +39,7 @@ class Event {
 		$args = array(
 			'label'                 => __( 'Exposición', 'britaprinz-core' ),
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'thumbnail' ),
+			'supports'              => array( 'title', 'thumbnail', 'editor' ),
 			'description'			=> __( 'Exposiciones', 'britaprinz-core' ),
 			'public'                => true,
 			'exclude_from_search'   => false,

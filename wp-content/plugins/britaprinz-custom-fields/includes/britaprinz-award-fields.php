@@ -97,6 +97,9 @@ function bpa_award_fields() {
 					->set_visible_in_rest_api( true )
 					->set_attribute( 'pattern', '^([0-9]{4}|[0-9]{4}-[0-9]{4})$' )
 					->set_attribute( 'placeholder', 'AAAA / AAAA-AAAA' ),
+				Field::make( 'image', 'bp_award_catalogue_cover', __( 'Portada del catálogo', 'britaprinz-custom-fields' ) )
+					->set_type( array( 'image' ) )
+					->set_help_text( __( 'Portada del catálogo', 'britaprinz-custom-fields' ) ),
 				Field::make( 'file', 'bp_award_catalogue', __( 'Catálogo', 'britaprinz-custom-fields' ) )
 					->set_type(
 						array( 'application/pdf' )

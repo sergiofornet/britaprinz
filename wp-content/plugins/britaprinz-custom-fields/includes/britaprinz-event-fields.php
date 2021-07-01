@@ -25,9 +25,9 @@ function bpa_event_fields() {
 			array(
 				Field::make( 'text', 'bp_event_artist', __( 'Artista', 'britaprinz-custom-fields' ) ),
 				Field::make( 'rich_text', 'bp_event_info', __( 'Información', 'britaprinz-custom-fields' ) ),
-				Field::make( 'media_gallery', 'bp_event_gallery', __( 'Galería', 'britaprinz-custom-fields' ) )
-					->set_type( array( 'image' ) )
-					->set_duplicates_allowed( false ),
+				// Field::make( 'media_gallery', 'bp_event_gallery', __( 'Galería', 'britaprinz-custom-fields' ) )
+				// 	->set_type( array( 'image' ) )
+				// 	->set_duplicates_allowed( false ),
 			)
 		);
 	Container::make( 'post_meta', __( 'Fechas de la exposición', 'britaprinz-custom-fields' ) )

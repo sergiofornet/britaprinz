@@ -39,7 +39,7 @@ class Project {
 		$args = array(
 			'label'                 => __( 'Proyecto', 'britaprinz-core' ),
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'editor', 'thumbnail' ),
+			'supports'              => array( 'title', 'editor' ),
 			'description'			=> __( 'Proyectos', 'britaprinz-core' ),
 			'public'                => true,
 			'exclude_from_search'   => false,

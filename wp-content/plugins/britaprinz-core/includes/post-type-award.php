@@ -39,7 +39,7 @@ class Award {
 		$args = array(
 			'label'                 => __( 'Premio Carmen Arozena', 'britaprinz-core' ),
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'thumbnail' ),
+			'supports'              => array( 'title' ),
 			'description'			=> __( 'Exposiciones', 'britaprinz-core' ),
 			'public'                => true,
 			'exclude_from_search'   => false,

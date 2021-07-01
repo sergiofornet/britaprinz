@@ -40,7 +40,7 @@ class Technique {
 		$args = array(
 			'label'                 => __( 'Técnicas de grabado', 'britaprinz-core' ),
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'thumbnail', 'editor' ),
+			'supports'              => array( 'title', 'editor' ),
 			'description'			=> __( 'Técnicas', 'britaprinz-core' ),
 			'public'                => true,
 			'exclude_from_search'   => false,

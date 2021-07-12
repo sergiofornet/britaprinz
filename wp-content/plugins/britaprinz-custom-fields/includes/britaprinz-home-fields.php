@@ -29,20 +29,20 @@ function bpa_home_fields() {
 									array(
 										array(
 											'type'      => 'post',
+											'post_type' => 'post',
+										),
+										array(
+											'type'      => 'post',
 											'post_type' => 'page',
 										),
 										array(
 											'type'      => 'post',
 											'post_type' => 'event',
 										),
-										array(
-											'type'      => 'post',
-											'post_type' => 'artwork',
-										),
-										array(
-											'type'      => 'post',
-											'post_type' => 'award',
-										),
+										// array(
+										// 	'type'      => 'post',
+										// 	'post_type' => 'award',
+										// ),
 										array(
 											'type'      => 'post',
 											'post_type' => 'project',

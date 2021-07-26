@@ -60,6 +60,10 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/britaprinz-award-fields.php
 add_action( 'carbon_fields_register_fields', 'bpa_technique_fields' );
 require_once plugin_dir_path( __FILE__ ) . 'includes/britaprinz-technique-fields.php';
 
+// Technique CPT custom fields.
+add_action( 'carbon_fields_register_fields', 'bpa_project_fields' );
+require_once plugin_dir_path( __FILE__ ) . 'includes/britaprinz-project-fields.php';
+
 // Artist taxonomy custom fields.
 add_action( 'carbon_fields_register_fields', 'bpa_artist_fields' );
 require_once plugin_dir_path( __FILE__ ) . 'includes/britaprinz-artist-fields.php';

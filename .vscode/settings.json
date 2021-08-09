@@ -3,6 +3,6 @@
 	"phpSniffer.standard": "./phpcs.xml.dist",
 	"phpSniffer.autoDetect": true,
 	"[php]": {
-		"editor.formatOnSave": true
+		"editor.formatOnSave": false
 	}
 }
